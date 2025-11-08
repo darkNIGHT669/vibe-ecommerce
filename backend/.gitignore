@@ -1,0 +1,16 @@
+// ========================================
+// FILE: .gitignore
+// Location: backend/.gitignore
+// ========================================
+node_modules/
+.env
+.env.local
+.env.production
+dist/
+build/
+*.log
+.DS_Store
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
