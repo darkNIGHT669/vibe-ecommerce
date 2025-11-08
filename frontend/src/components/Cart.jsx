@@ -47,7 +47,7 @@ function Cart({ isOpen, onClose, cart, onUpdateQuantity, onRemoveItem, onCheckou
                       {item.product.name}
                     </h3>
                     <p className="text-sm text-gray-500 mt-1">
-                      ${item.price.toFixed(2)} each
+                      ₹{item.price.toFixed(2)} each
                     </p>
                     <div className="flex items-center gap-2 mt-2">
                       <button
@@ -79,7 +79,7 @@ function Cart({ isOpen, onClose, cart, onUpdateQuantity, onRemoveItem, onCheckou
                   </div>
                   <div className="text-right">
                     <p className="font-bold text-gray-800">
-                      ${(item.price * item.quantity).toFixed(2)}
+                      ₹{(item.price * item.quantity).toFixed(2)}
                     </p>
                   </div>
                 </div>
@@ -91,7 +91,7 @@ function Cart({ isOpen, onClose, cart, onUpdateQuantity, onRemoveItem, onCheckou
           <div className="border-t p-4 space-y-4">
             <div className="flex items-center justify-between text-lg font-bold">
               <span>Total:</span>
-              <span className="text-blue-600">${cart.total.toFixed(2)}</span>
+              <span className="text-blue-600">₹{cart.total.toFixed(2)}</span>
             </div>
             <button
               onClick={onCheckout}

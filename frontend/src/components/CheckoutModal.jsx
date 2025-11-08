@@ -90,13 +90,13 @@ function CheckoutModal({ isOpen, onClose, cart, userId, onSuccess }) {
                     {item.product.name} x {item.quantity}
                   </span>
                   <span className="font-medium">
-                    ${(item.price * item.quantity).toFixed(2)}
+                    ₹{(item.price * item.quantity).toFixed(2)}
                   </span>
                 </div>
               ))}
               <div className="flex justify-between text-lg font-bold pt-2 border-t">
                 <span>Total:</span>
-                <span className="text-blue-600">${cart.total.toFixed(2)}</span>
+                <span className="text-blue-600">₹{cart.total.toFixed(2)}</span>
               </div>
             </div>
           </div>
